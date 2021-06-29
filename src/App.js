@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form style={{textAlign: "center"}}>
+     <div>
+       <label>FirstName</label>
+       <br />
+       <input type="text" name="firstname" />
+       <br />
+       <label>LastName</label>
+       <br />
+       <input type="text" name="lastname" />
+       <br />
+       <label>Email</label>
+       <br />
+       <input type="text" name="Email" />
+       <br />
+       <label>Phone number</label>
+       <br />
+       <input type="text" name="phone number" />
+       <br />
+       <label>Gender</label>
+       <br />
+       <select>
+         <option>Male</option>
+         <option>Female</option>
+       </select>
+       <br />
+     </div>
+     <br />
+     <button type="submit" style={{color: "orange"}}>Submit</button>
+    </form>
   );
 }
 
